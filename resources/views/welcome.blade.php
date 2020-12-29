@@ -5,12 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    
+
     <title>Gas Detect</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Favicons -->
+    <link href="asssets/img/favicon.png" rel="icon">
+    <link href="asssets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="asssets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asssets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="asssets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="asssets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="asssets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+    <!--   <link href="asssets/vendor/owl.carousel/asssets/owl.carousel.min.css" rel="stylesheet">
+ -->
+    <link href="asssets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="asssets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -18,8 +39,10 @@
     <div class="">
 
 
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
-            <a class="navbar-brand font-italic" style="color:red" href="#"><h1> Gas Detect </h1></a>
+        <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand font-italic" style="color:red" href="#">
+                <h1> Gas Detect </h1>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,20 +51,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
 
-                    <!-- Cualquier cosa despues del icono-->
+                    <!-- Cualquier cosa despues del icono
 
                 </ul>
-                
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         @if (Route::has('login'))
                         <div class="">
                             @auth
-                            
-                            
-                            <a href="{{ url('/home') }}" class="btn btn-outline-danger btn-lg " role="button" aria-pressed="true">Sistema de gestión</a>
 
-                           
+
+                            <a href="{{ url('/home') }}" class="btn btn-outline-danger btn-lg " role="button"
+                                aria-pressed="true">Sistema de gestión</a>
+
+
                             @else
                             <a href="{{ route('login') }}" class="btn btn-outline-danger btn-lg mr-1">Login</a>
 
@@ -55,60 +79,31 @@
                 </ul>
 
             </div>
-        </nav>
+        </nav> -->
 
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-        <section class=" container mt-5 pt-5">
-            <h1 class="text-center mb-3 text-uppercase font-italic">¿Que es Gas Detect?</h1>
-            <p>Gas detect es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus a minima, amet
-                odio veritatis voluptatibus consectetur unde cupiditate eum iusto quo labore esse mollitia facilis
-                libero porro. Ratione, inventore.</p>
-        </section>
-    </div>
-    <div id="app"></div>
-    
-    <script src="{{asset('js/app.js')}}"></script>
+
+        <div id="app">
+
+            <welcome></welcome>
+
+        </div>
+
+        <script src="{{asset('js/app.js')}}"></script>
+
+        <!-- Vendor JS Files -->
+        <script src="asssets/vendor/jquery/jquery.min.js"></script>
+        <script src="asssets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="asssets/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="asssets/vendor/php-email-form/validate.js"></script>
+        <script src="asssets/vendor/waypoints/jquery.waypoints.min.js"></script>
+        <script src="asssets/vendor/counterup/counterup.min.js"></script>
+        <script src="asssets/vendor/jquery-sticky/jquery.sticky.js"></script>
+        <script src="asssets/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="asssets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="asssets/vendor/venobox/venobox.min.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="asssets/js/main.js"></script>
 </body>
 
 </html>
