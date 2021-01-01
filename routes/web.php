@@ -8,9 +8,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/* Route::get('/users', function () {
-    return view('users');
-}); */
+Route::get('/home', function () {
+    return view('home');
+})->middleware('auth'); 
+
 Route::get('/login', function () {
     return view('login');
 });
@@ -22,5 +23,5 @@ Auth::routes();
 
 // VUE ROUTER
 Route::get('/{vue_capture?}', function () {
-    return view('home');
+    return view('welcome');
  })->where('vue_capture', '^(?!storage).*$')->middleware('auth');

@@ -5,19 +5,17 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 Vue.component('dashboard', require('./components/DashboardComponent.vue').default);
-Vue.component('user', require('./components/UserComponent.vue').default);
+Vue.component('user', require('./components/pages/UserComponent.vue').default);
 Vue.component('sidebar', require('./components/SidebarComponent.vue').default);
-Vue.component('welcome', require('./components/WelcomeComponent.vue').default);
+Vue.component('welcome', require('./components/pages/WelcomeComponent.vue').default);
+Vue.component('About', require('./components/pages/AboutComponent.vue').default);
+
 
 export default new VueRouter({
     mode: 'history',
     routes: [
+        
         {
-            path: '/home',
-            name: 'home',
-            component: require('./components/DashboardComponent').default
-        },  
-           {
             path: '/dashboard',
             name: 'dashboard',
             component: require('./components/DashboardComponent').default
@@ -25,17 +23,23 @@ export default new VueRouter({
         {
             path: '/user',
             name: 'user',
-            component: require('./components/UserComponent').default
+            component: require('./components/pages/UserComponent').default
         },  
         {
             path: '/',
             name: 'welcome',
-            component: require('./components/WelcomeComponent').default
-        } 
+            component: require('./components/pages/WelcomeComponent').default
+        } ,
+        {
+            path: '/about',
+            name: 'about',
+            component: require('./components/pages/AboutComponent').default
+        }, 
         
      
         
     ],
-}); 
+});
+
 
 

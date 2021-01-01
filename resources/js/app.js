@@ -10,7 +10,5 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app',
     router,
-    data: {
-        menu:0
-    }
+    
 });

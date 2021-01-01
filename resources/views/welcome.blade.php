@@ -84,7 +84,8 @@
 
         <div id="app">
 
-            <welcome></welcome>
+            
+            <router-view></router-view>
 
         </div>
 
