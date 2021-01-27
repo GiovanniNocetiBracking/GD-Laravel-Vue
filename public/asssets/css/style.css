@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   padding: 15px 0;
   position: relative;
+  
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -124,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  
 }
 
 #header .logo a {
@@ -1513,6 +1515,8 @@ section {
   color: #fff;
   font-size: 14px;
   position: relative;
+  width:100%;
+  
 }
 
 #footer::before {

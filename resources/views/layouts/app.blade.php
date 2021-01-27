@@ -24,7 +24,7 @@
 <body>
     <div id="app">
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand font-italic" style="color:red" href="/"><h1> Gas Detect </h1></a>
+        <a class="navbar-brand font-italic" style="color:red" href="/"><h1> Sistema de gestion: Gas Detect </h1></a>
 
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -75,10 +75,9 @@
                     </li>
                     @endguest
                 </ul>
-
             </div>
         </nav>
-
+        
         <main class="py-4">
             @yield('content')
         </main>

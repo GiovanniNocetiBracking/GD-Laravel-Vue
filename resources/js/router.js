@@ -5,10 +5,12 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 Vue.component('dashboard', require('./components/DashboardComponent.vue').default);
-Vue.component('user', require('./components/pages/UserComponent.vue').default);
+Vue.component('user', require('./components/UserComponent.vue').default);
 Vue.component('sidebar', require('./components/SidebarComponent.vue').default);
 Vue.component('welcome', require('./components/pages/WelcomeComponent.vue').default);
 Vue.component('About', require('./components/pages/AboutComponent.vue').default);
+Vue.component('Gasdetect', require('./components/pages/GasDetectComponent.vue').default);
+
 
 
 export default new VueRouter({
@@ -23,7 +25,7 @@ export default new VueRouter({
         {
             path: '/user',
             name: 'user',
-            component: require('./components/pages/UserComponent').default
+            component: require('./components/UserComponent').default
         },  
         {
             path: '/',
@@ -34,6 +36,11 @@ export default new VueRouter({
             path: '/about',
             name: 'about',
             component: require('./components/pages/AboutComponent').default
+        }, 
+         {
+            path: '/product/gasdetect',
+            name: 'gasdetect',
+            component: require('./components/pages/GasDetectComponent').default
         }, 
         
      

@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicons -->
-    <link href="asssets/img/favicon.png" rel="icon">
-    <link href="asssets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{asset ('asssets/img/favicon.png')}}" rel="icon">
+    <link href="{{asset ('asssets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -21,24 +21,22 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="asssets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="asssets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="asssets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="asssets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="asssets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+    <link href="{{asset ('asssets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset ('asssets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+    <link href="{{asset ('asssets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+    <link href="{{asset ('asssets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+    <link href="{{asset ('asssets/vendor/line-awesome/css/line-awesome.min.css')}}" rel="stylesheet">
     <!--   <link href="asssets/vendor/owl.carousel/asssets/owl.carousel.min.css" rel="stylesheet">
  -->
-    <link href="asssets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="{{asset ('asssets/vendor/venobox/venobox.css')}}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="asssets/css/style.css" rel="stylesheet">
+    <link href="{{asset ('asssets/css/style.css')}}" rel="stylesheet">
 
 </head>
 
 <body class="antialiased">
     <div class="">
-
-
         <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand font-italic" style="color:red" href="#">
                 <h1> Gas Detect </h1>
@@ -81,30 +79,26 @@
             </div>
         </nav> -->
 
-
-        <div id="app">
-
-            
+        <div id="app">            
             <router-view></router-view>
-
         </div>
 
-        <script src="{{asset('js/app.js')}}"></script>
+        <script src="{{asset ('js/app.js')}}"></script>
 
         <!-- Vendor JS Files -->
-        <script src="asssets/vendor/jquery/jquery.min.js"></script>
-        <script src="asssets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="asssets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="asssets/vendor/php-email-form/validate.js"></script>
-        <script src="asssets/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="asssets/vendor/counterup/counterup.min.js"></script>
-        <script src="asssets/vendor/jquery-sticky/jquery.sticky.js"></script>
-        <script src="asssets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="asssets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="asssets/vendor/venobox/venobox.min.js"></script>
+        <script src="{{asset ('asssets/vendor/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/php-email-form/validate.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/counterup/counterup.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+        <script src="{{asset ('asssets/vendor/venobox/venobox.min.js')}}"></script>
 
         <!-- Template Main JS File -->
-        <script src="asssets/js/main.js"></script>
+        <script src="{{asset ('asssets/js/main.js')}}"></script>
 </body>
 
 </html>

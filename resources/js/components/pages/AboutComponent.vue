@@ -74,7 +74,7 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("asssets/img/our-values-1.jpg");'>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Nuestra misión </a></h5>
@@ -83,7 +83,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("asssets/img/our-values-1.jpg");'>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Nuestra misión </a></h5>
