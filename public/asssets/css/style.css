@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(21, 5, 23, 0.5) linear-gradient(rgba(26, 0, 33, 0.5) 0%, rgba(26, 0, 33, 0.5) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(147, 47, 69, 0.7) 76%, rgba(236, 97, 93, 0.7) 94%, rgba(236, 97, 93, 0.5) 100%) repeat scroll 0% 0%;
+  background: rgba(38, 0, 175, 0.644) linear-gradient(rgba(95, 2, 149, 0.664) 0%, rgba(38, 0, 175, 0.644) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(147, 47, 69, 0.7) 76%, rgba(236, 97, 93, 0.7) 94%, rgba(236, 97, 93, 0.5) 100%) repeat scroll 0% 0%;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1356,7 +1356,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ff7f5d;
+    
   border: 0;
   padding: 10px 24px;
   color: #fff;

@@ -1,8 +1,12 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
-
+//RUTA PARA FORM CONTACT US LANDING PAGE
+Route::post('/contact', [ContactController::class, 'sendContact'] );
+//RUTA PARA FORM SUSCRIBE LANDING PAGE
+Route::post('/suscribe', [ContactController::class, 'saveSubscriber'] );
 
 Route::get('/', function () {
     return view('welcome');

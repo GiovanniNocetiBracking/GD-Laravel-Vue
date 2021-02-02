@@ -25,6 +25,9 @@
     },
     "dependencies": {
         "material-dashboard": "^2.1.0",
-        "vue-router": "^3.4.9"
+        "vue-router": "^3.4.9",
+        "vue-toast-notification": "^0.6.0",
+        "vue-toasted": "^1.1.28",
+        "vuelidate": "^0.7.6"
     }
 }
