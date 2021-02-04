@@ -5,7 +5,7 @@
 <div class="limiter">
 		<div class="container-login100" style="background-image: url('assetsAuth/images/img-01.jpg');">
 			<div class="wrap-login100 p-t-190 p-b-30">
-				<form class="login100-form" method="POST" >
+				<form class="login100-form" method="POST" action="{{ route('login') }}" >
                 @csrf
 					<div class="login100-form-avatar">
 						<img src="assetsAuth/images/lego-batman.jpg" alt="AVATAR">
@@ -52,7 +52,7 @@
 
 					<div class="text-center w-full">
 						<a class="txt1" href="/register">
-							¿Eres nuvo? .. Registrate!
+							¿Eres nuevo? .. Registrate!
 							<i class="fa fa-long-arrow-right"></i>						
 						</a>
 					</div>
