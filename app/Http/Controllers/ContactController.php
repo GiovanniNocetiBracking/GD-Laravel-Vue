@@ -43,7 +43,7 @@ class ContactController extends Controller
  */
 
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email|unique:users,email'
+            'email' => 'required|email|unique:subscribers,mail'
         ]);
 
         if ($validator->fails()) {
