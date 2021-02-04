@@ -42,15 +42,14 @@ class ContactController extends Controller
         ]);
  */
 
-            $validator = Validator::make($request->all(), [
-                'email' => 'required|email|unique:users,email'
-            ]);
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email|unique:users,email'
+        ]);
 
-            if ($validator->fails()) {
-                return redirect('/')
-                            ->withErrors($validator)
-                            ->withInput();
-            }
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator ->errors() ]);
+                    
+        }
 
         $data =  [
             'mail' => $request ['email']

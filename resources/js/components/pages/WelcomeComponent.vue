@@ -434,25 +434,28 @@
                 message: '',
               }
             },
-            suscribeContact(){
+            suscribeContact() {
 
                 axios.post('/suscribe', this.suscribeEmail)
                     .then((res) => {
-                        let toast = this.$toasted.show("Muchas gracias por suscribirte!!", { 
-                        theme: "bubble", 
-                        position: "top-center", 
-                        duration : 5000
-                    })
-
-                    this.suscribeEmail.email=''
-
+                        if (res.data.errors) {
+                            this.toasty(res.data.errors.email)
+                        } else {
+                            this.toasty("Muchas gracias por suscribirte !!")                        }
+                        this.suscribeEmail.email = ''
                     })
                     .catch(function (error) {
-                        
-                       console.log(error.response.data.errors.email)
+                        console.log(error)
                     });
-                    
-            }
+            },
+
+            toasty(message) {
+                let toast = this.$toasted.show(message, {
+                                theme: "bubble",
+                                position: "top-center",
+                                duration: 5000
+                            })
+            },
 
         },
 
